@@ -33,13 +33,11 @@ This project is a simple **Retrieval-Augmented Generation (RAG)** system that al
 - ChromaDB  
 - Google Gemini API  
 - PyPDF  
-- Rank BM25  
-
----
+- Rank BM25
 
 ## 📁 Project Structure
 
-```txt
+```text
 AI_Rag_system/
 ├── backend/
 │   ├── app/
@@ -56,53 +54,62 @@ AI_Rag_system/
 │
 ├── .gitignore
 └── README.md
+```
 
 ---
 
-## How to Run the Project
+## 💻 How to Run the Project
 
 ### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Chamuda2005/AI_Rag_system.git
 cd AI_Rag_system
+```
 
-2. Create a virtual environment
+### 2. Create a virtual environment
+```bash
 python -m venv .venv
-
-3. Activate the virtual environment
+```
+### 3. Activate the virtual environment
+```bash
 .venv\Scripts\activate
-
-4. Install backend dependencies
+```
+### 4. Install backend dependencies
+```bash
 pip install -r backend/requirements.txt
-
-5. Create .env file
+```
+### 5. Create .env file
+```bash
 GOOGLE_API_KEY=your_google_ai_studio_api_key
-
-6. Run the backend
+```
+### 6. Run the backend
+```bash
 cd backend
 uvicorn main:app --reload
-
+```
 Backend runs on:
 http://127.0.0.1:8000
 
-7. Run the frontend
+### 7. Run the frontend
+```bash
 cd frontend
 npm install
 npm run dev
-
+```
 Frontend runs on:
 http://localhost:3000
 
-How It Works
 
-The user uploads a PDF file from the frontend.
-The backend saves the uploaded PDF.
-Text is extracted from the PDF.
-Extracted text is divided into smaller chunks.
-Each chunk is converted into embeddings.
-Embeddings are stored in ChromaDB.
-The user asks a question.
-The system performs hybrid search.
-Relevant chunks are sent to the Gemini LLM.
-The answer is displayed in the frontend with sources.
+## How It Works
+
+1. The user uploads a PDF file from the frontend.
+2. The backend saves the uploaded PDF.
+3. Text is extracted from the PDF.
+4. Extracted text is divided into smaller chunks.
+5. Each chunk is converted into embeddings.
+6. Embeddings are stored in ChromaDB.
+7. The user asks a question.
+8. The system performs hybrid search.
+9. Relevant chunks are sent to the Gemini LLM.
+10. The answer is displayed in the frontend with sources.
