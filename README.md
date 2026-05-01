@@ -1,37 +1,43 @@
 # AI RAG System
 
-This project is a simple Retrieval-Augmented Generation (RAG) system that allows users to upload PDF files through a web interface and ask questions based on the uploaded documents.
+This project is a simple **Retrieval-Augmented Generation (RAG)** system that allows users to upload PDF files through a web interface and ask questions based on the uploaded documents.
 
-## Features
+---
 
-- PDF upload through frontend
-- PDF text extraction
-- Text chunking
-- Vector embedding using Google AI Studio API
-- ChromaDB vector database
-- Hybrid search using vector search and BM25 keyword search
-- Gemini LLM answer generation
-- Chat history support
-- Source document display
-- Modern Next.js frontend
-- FastAPI backend
+## 🚀 Features
 
-## Technologies Used
+- PDF upload through frontend  
+- PDF text extraction  
+- Text chunking  
+- Vector embedding using Google AI Studio API  
+- ChromaDB vector database  
+- Hybrid search (vector search + BM25 keyword search)  
+- Gemini LLM answer generation  
+- Chat history support  
+- Source document display  
+- Modern Next.js frontend  
+- FastAPI backend  
+
+---
+
+## 🛠 Technologies Used
 
 ### Frontend
-- Next.js
-- React
-- Tailwind CSS
+- Next.js  
+- React  
+- Tailwind CSS  
 
 ### Backend
-- Python
-- FastAPI
-- ChromaDB
-- Google Gemini API
-- PyPDF
-- Rank BM25
+- Python  
+- FastAPI  
+- ChromaDB  
+- Google Gemini API  
+- PyPDF  
+- Rank BM25  
 
-## Project Structure
+---
+
+## 📁 Project Structure
 
 ```txt
 AI_Rag_system/
@@ -59,32 +65,34 @@ AI_Rag_system/
 git clone https://github.com/Chamuda2005/AI_Rag_system.git
 cd AI_Rag_system
 
-### 2. Create a virtual environment
+2. Create a virtual environment
 python -m venv .venv
 
-### 3. Activate the virtual environment
+3. Activate the virtual environment
 .venv\Scripts\activate
 
-### 4. Install backend dependencies
+4. Install backend dependencies
 pip install -r backend/requirements.txt
 
-### 5. Create .env file
+5. Create .env file
 GOOGLE_API_KEY=your_google_ai_studio_api_key
 
-###6. Run the backend
+6. Run the backend
 cd backend
 uvicorn main:app --reload
-### Backend runs on:
+
+Backend runs on:
 http://127.0.0.1:8000
 
-### 7. Run the frontend
+7. Run the frontend
 cd frontend
 npm install
 npm run dev
-### Frontend runs on:
+
+Frontend runs on:
 http://localhost:3000
 
-## How It Works
+How It Works
 
 The user uploads a PDF file from the frontend.
 The backend saves the uploaded PDF.
