@@ -56,6 +56,7 @@ AI_Rag_system/
 │
 ├── .gitignore
 └── README.md
+
 ---
 
 ## How to Run the Project
