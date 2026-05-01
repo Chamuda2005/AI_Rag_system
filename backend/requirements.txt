@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-dotenv
+chromadb
+google-genai
+pypdf
+python-docx
+rank-bm25
+numpy
+jupyter
+ipykernel
+python-multipart
